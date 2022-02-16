@@ -28,3 +28,15 @@ heroku login
 # Create app in heroku - prepares to receive the app
 heroku create
 https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app
+
+###### Flask ######
+
+# Start web service
+flask run
+
+# Stop web service
+ctrl+c
+
+# Add environment variables
+export FLASK_APP=app.py
+export FLASK_ENV=development
