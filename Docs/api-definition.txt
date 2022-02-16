@@ -1,0 +1,4 @@
+GET /rates                              - Get yesterday rates
+GET /rates/<rate code>                  - Get the latest rate code
+GET /rates/<rate code>?exchange_date    - Get the rate for a specific exchange rate
+GET /rates/<rate code>?currency         - Get the rate for a specific currency
