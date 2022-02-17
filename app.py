@@ -8,8 +8,6 @@ c = CurrencyRates()
 def get_rates():
     return c.get_rates('USD')
 
-
-
-#currencies = ["USD", "GBP", "EUR", "BRL"]
-#for currency in currencies:
-#print(currency + "->USD: " + str(c.get_rate(currency, "USD")) )
+@app.get("/rates/<code>")
+def get_ratesById(code):
+    return c.get_rates(code)
