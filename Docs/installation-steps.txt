@@ -1,0 +1,42 @@
+###### VIRTUAL ENVIRONMENTS ######
+
+# To create a virtual environmnet
+python3 -m venv /venv
+
+# To activate the virtual environment
+source venv/bin/activate
+
+
+
+###### PACKAGE INSTALLATION AND UPGRADES ######
+
+#To upgrade python pip
+python3 -m pip install --upgrade pip
+
+# Install forex-python
+pip install forex-python
+
+
+###### Heroku ######
+
+# Install Heroku CLI
+brew install heroku/brew/heroku
+
+# Login with Heroku
+heroku login
+
+# Create app in heroku - prepares to receive the app
+heroku create
+https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app
+
+###### Flask ######
+
+# Start web service
+flask run
+
+# Stop web service
+ctrl+c
+
+# Add environment variables
+export FLASK_APP=app.py
+export FLASK_ENV=development
